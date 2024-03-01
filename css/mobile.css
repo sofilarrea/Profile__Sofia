@@ -1,0 +1,692 @@
+/* Hero Sectipageon */
+.hero{
+    background-image: url('../assests/images/jeremy-bishop-rqWoB4LFgmc-unsplash.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    background-attachment: fixed;
+    padding: .1px;
+    width: 100%; 
+
+}
+.container-hero h1 {
+    font-size: 2.4rem;
+    display: flex;  
+    position: absolute;
+    top: 16%;
+    left: auto;
+    transform: rotate(-90deg);
+    color: var(--color-secundary)
+    
+}
+.withe-line,
+.withe-line-contact {
+    height: 1px;
+    background-color: var(--color-secundary);
+    position: absolute;
+    width: 30%;
+    left: 16%;
+    top: 26%;
+    transform: rotate(-90deg);    
+}
+.intro p,
+.intro-contact p {
+    position: absolute;
+    font-size: 1.2rem;
+    font-family: var(--font-family-two);
+    color: var(--color-secundary);
+    left: 33%;
+    top: 5%;
+    bottom: 10%;
+    padding: 33px 8%; 
+} 
+
+
+/* Navbar Section */
+nav {  
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between; 
+    z-index: 1; 
+      
+}
+
+.home {
+    display: flex;   
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;    
+}
+
+.home a {
+    padding: 20px 0;
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: flex-end;    
+    gap: 10px;
+    height: 100%;
+    padding: 15px;
+}
+
+.navbar-links {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.home a,
+.navbar-links li a {
+    text-decoration: none;
+    color: var(--color-secundary);
+    font-family: var(--font-family-one);
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.5;
+    letter-spacing: 1px;   
+} 
+
+nav ul {
+    list-style-type: none;
+}
+
+/* Open and close menu */
+
+#navbar:target .navbar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;  /*Me ocupa la pantalla */
+    padding: 20px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.838);
+    justify-content: center;  
+}
+
+#navbar:target .open {
+    display: none;
+}
+
+#navbar:target .close {
+    display: block;   
+}
+
+.close {
+    display: none;
+}
+/* Section One */
+.section-one{
+    height: 100dvh;    
+    background-image: url(../assests/images/mike-ko-tjod6u2RpiU-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.card {
+    border: 2px white #fafafa10;
+    border-radius: 3%;    
+    width: 20rem;
+    height: 25rem;
+    margin: 0 auto;   
+    position: absolute;
+    top: 20%;
+    left: 11%; 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.glass-effect{
+    background-color: var(--glass-effect);
+    backdrop-filter: blur(0.4rem);   
+}
+
+.quotation-mark {
+    width: 15%;
+    position: absolute;
+    top: -20px; 
+    right: -5px; 
+    text-shadow: 2px 5px #000;
+    z-index: 1;
+    
+    
+}
+
+/* Polaroid */
+.polaroid {
+    position: relative;
+    width: 150px;
+    padding: 15px;
+    background-color:var(--color-smoke);  
+    top: 35%;
+    left: 10px;
+    border-radius: 10px;
+    filter: grayscale(60%);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; 
+  }
+
+.polaroid img {
+    width: 100%;
+    border-radius: 10px;
+  }
+.polaroid p{
+    font-family: var(--font-family-five);
+    font-size: 0.9rem; 
+    color: var(--color-secundary);
+    text-align: center;
+    top: 15%;
+    letter-spacing: 2;
+} 
+.section-one-text {
+    position: absolute;
+    width: 250px;
+    left: 35%;
+    top: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section-one-text h3 {
+    font-family: var(--font-family-three);
+    color: var(--color-secundary);   
+    font-size: 15px;
+}
+.section-one-text p{
+    font-family: var(--font-family-two);
+    font-size: 14px;
+    color: var(--color-secundary);   
+    justify-content: center;   
+    padding: 10px 20%;     
+} 
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    height: 60px;
+    background-image: url('../assests/images/lines.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.footer-link a,
+.footer p {
+    
+    opacity: 0.75;
+    text-decoration: none;
+    font-size: 15px;    
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+    color: rgb(255, 250, 250);
+}
+
+.footer p {
+    padding-right: 50px;
+}
+
+
+/* Media Querys */
+@media screen and (min-width: 375px) {
+    .withe-line{
+        left: 18%;
+    }
+    .intro p{
+        font-size: 1rem;
+    }
+    .card glass-effect{
+        left: 8%;
+    }
+    .section-one-text p {
+        padding: 10px 24%;
+        align-self: flex-end;
+    }
+    .footer{
+        height: 30px;
+    }
+    .container-hero h1{
+        left: auto;
+
+    }
+}
+@media screen and (max-width: 320px) {
+    .withe-line{
+        display: none;
+    }
+    .quotation-mark{  
+        left: 4%;
+        width: 15%;
+        right: -13px;
+        top: -15px;
+    }
+    .withe-line{
+        display: none;
+    }    
+    .card glass-effect {
+        width: 280px;
+    }
+    .hero{
+        width: 100%;
+    }
+}
+
+
+/* ---------------------------------- */
+/* --------- Contact Page ---------- */
+/* ---------------------------------- */
+
+
+/* Hero Section */
+.hero-contact{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    background-attachment: fixed;    
+    width: 100%;
+    overflow: hidden;
+} 
+
+.container-hero h1{
+    font-size: 2rem;    
+    position: absolute;
+    color: var(--color-secundary);
+    transform: rotate(-90deg);
+    top: 26%;
+    left: 6%;
+    opacity: 1;
+}
+.intro-contact p {
+    left: 40%
+}
+.withe-line-contact{
+    left: 24%;
+}
+.contact {
+    top: 35%;
+}
+/* Section Texture black and photos */
+.section-contact-me {
+    background-color: var(--color-primary);
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;   
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.section-contact-me h2 {
+    display: none;
+}
+
+.half-section {
+    display: none; /* Saco imagnes para mobile y dejo form */
+}
+
+.form-contact {
+    max-width: 600px; /* Ancho máximo del formulario */
+    width: 100%; /* Ajustar al ancho completo de la sección */
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+    padding: 10px; /* Espaciado interno del formulario */
+    background-color: var(--color-primary);
+    box-sizing: border-box; /* Incluir el padding en el cálculo del tamaño */
+}
+.full-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos verticalmente */
+}
+.form {
+    margin: 0;
+}
+
+/* Image */
+.half-section-two figure:last-of-type img {
+    width: 100%; 
+    height: auto; 
+    opacity: 0.4; 
+}
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.9rem;
+    margin-bottom: 5px;
+    font-family: var(--font-family-three);
+    color: var(--color-secundary);
+    justify-content: center;
+    letter-spacing: 32px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #e3dada;
+    font-size: 1.1rem;
+    font-family: var(--font-family-one);
+}
+
+input,
+select,
+textarea {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border-top:  var(--color-secundary);
+    border-left:  var(--color-secundary);
+    border-right:  var(--color-secundary);
+    background-color: var(--color-primary);
+    font-family: var(--font-family-one);
+    resize: none;
+    border-bottom: 1px solid var(--color-secundary);
+}
+#email {
+    border-bottom: 1px solid var(--color-secundary);
+
+}
+textarea {
+    height: 70px;
+    resize: none;
+    
+}
+
+input[type="submit"] {
+    background-color:var(--color-smoke);
+    color:var(--color-primary);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    padding: 10px 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: green;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    text-transform: uppercase;
+
+}
+input[type="submit"]:visited {
+    background-color: #8e3e72;
+} 
+/* Leer el input */
+.form input,
+.form textarea {
+    color: var(--color-secundary); 
+}
+.form input[type="email"]:invalid {
+    color: red;
+    border: none;
+} 
+
+
+
+/* ---------------------------------- */
+/* -------- Life Sketch Page -------- */
+/* ---------------------------------- */
+.hero-life{
+    background-image: url('/assests/images/circulo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    background-attachment: fixed;
+    padding: .1px;
+    width: 100%; 
+
+}
+
+/* Dentistry Section */
+.dentistry,
+.programmer{
+    background-image: url('/assests/images/bblack.jpg');
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.dentistry-square,
+.programmer-square{
+    background-color: rgba(0, 0, 0, 0.563);
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    
+}
+
+.dentistry h2,
+.programmer h2,
+.gallerytitle{  
+    font-size: 1.9rem;    
+    font-family: var(--font-family-three);
+    color: var(--color-secundary);
+    letter-spacing: 32px;
+    text-align: center;
+}
+.programmer h2{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 28px;
+}
+.dentistry p,
+.programmer p{
+    font-size: 0.9rem;
+    font-family: var(--font-family-two);
+    color: var(--color-secundary);
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px;
+}
+/* Gallery Section */
+.gallery{
+    background-color: var(--color-smoke);
+    width: 100%;
+    max-width: 2560px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.gallerycontainer{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallerypicture{
+    min-width: 200px;
+    flex: 350px;
+}
+
+.galleryimg{
+    width: 220px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+/* ---------------------------------- */
+/* --------- Porfolio Page ---------- */
+/* ---------------------------------- */
+
+/* Header Section */
+.hero-portfolio{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.542) 50%, rgba(10, 2, 9, 0.241)), url('/assests/images/porfolio3.jpg');
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;    
+    width: 100%;
+    position: relative;
+    display: flex;    
+    align-items: center; 
+    justify-content: center;
+    bottom: -10px;
+} 
+.portfolio{
+    display: flex;
+    flex-direction:column;
+}
+.portfolio ul {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.portfolio li{
+    font-size: 3rem;
+    color: var(--color-secundary);
+    opacity: 0.7;
+    text-align: center;    
+    transition: transform 0.3s;
+}
+.portfolio li.rotate {
+    transform: rotate(90deg);
+    margin-bottom: 0;
+    margin-top: 0;    
+}
+.portfolio li.rotate.animate__slideInLeft {
+    animation: slideInLeft 1s;
+
+}
+.portfolio li.itemo{
+    margin: 25px 0;
+}
+/* Nav */
+.portfolio-nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between; 
+    z-index: 1;   
+}
+
+
+/* Jobs Front portfolio */
+.Jobs-Front,
+.Oil,
+.Jobs-Back {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.773), rgba(0, 0, 0, 0.4)), url('/assests/images/tela.jpg');
+    background-position: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+    width: 100%;
+    position: relative;
+    padding: 50px 0;
+    color: var(--color-tertiary); 
+    /* background-color: #080707; */
+}
+.Jobs-Front hr,
+.Jobs-Back hr {
+    width: 60%;
+    height: 0.5px;
+    background-color: var(--color-tertiary);
+    padding: 25px auto;
+}
+.Jobs-Front h2,
+.Oil h2,
+.Jobs-Back h2 {
+    font-size: 1.3rem;
+    font-family: var(--font-family-one);
+    color: var(--color-tertiary);
+    text-align: center;   
+    letter-spacing: 15px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+
+.bodega p,
+.aceite p,
+.africa p {
+    font-size: 1.1rem;
+    font-family: var(--font-family-two);
+    color: var(--color-tertiary);
+    text-align: center;
+    /* margin-bottom: 20px;     */
+    font-weight: 900;
+}   
+
+.cincosentidos:link,
+.dioliva:link,
+.africa:link {
+    color: rgb(7, 7, 243);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.cincosentidos:visited,
+.dioliva:visited,
+.africa:visited {
+    color: rgb(247, 14, 14);
+}
+.cincosentidos:hover,
+.dioliva:hover,
+.africa:hover{
+    color: rgb(49, 237, 109);
+}
+.bodega img,
+.aceite img,
+.africa img {
+    width: 100%;    
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+}
+.Jobs-Front p:last-child,
+.Oil p:last-child,
+.Jobs-Back p:last-child {
+    margin-bottom: 0;
+}
+
+.Oil h2{
+    display: none;
+}
+
+
+/* Media Querys */
+@media screen and (min-width: 320px) {    
+    .bodega p,
+    .aceite p,
+    .africa p{
+        padding: 0 10px;
+    }
+}
+@media screen and (min-width: 375px) {    
+    .bodega p,
+    .aceite p,
+    .africa p{
+        padding: 0 10px;
+    }
+}

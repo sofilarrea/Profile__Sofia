@@ -1,0 +1,138 @@
+/* ---------------------------------- */
+/* --------- Index Page ---------- */
+/* ---------------------------------- */
+
+/* Hero and navbar */
+
+.container-hero h1{
+    font-size: 3.5rem;
+    left: 7%;
+}
+.withe-line {
+    left: 19%;
+    top: 35%;
+    width: 24%;
+}
+
+.intro p {
+    font-size: 1.3rem;
+    left: 18%;
+    padding: 0 20%;
+    top: 10%;
+}
+
+.home a,
+.navbar-links li a {
+    font-size: 20px;
+    width: 15%
+}
+
+.menu-icon i{
+    padding: 0 25px;
+}
+
+
+
+/* Section one */
+.card{
+    position: relative;
+    width: 500px;
+}
+
+/* Polaroid */
+.polaroid{
+    width: 200px;
+    right: 220%;
+    left: auto;
+    top: 25%;
+}
+
+.section-one-text p{
+    padding: 5px 2%;
+}
+.section-one-text h3{
+    font-size: 23px;
+}
+.polaroid p {
+    font-size: 1.2rem;
+}
+
+
+/* ---------------------------------- */
+/* --------- Contact Page ---------- */
+/* ---------------------------------- */
+
+/* Navbar & Hero */
+
+.home a{
+    font-size: 28px;
+}
+
+.withe-line-contact{
+    top: 40%;
+}
+.intro-contact p {
+    top: 20%;
+    left: 35%;
+}
+
+.half-section figure:last-of-type img {
+    right: 0;
+    left: 40%;
+    bottom: 0;
+    width: 400px;
+    height: 652px;
+    animation: pulse;
+    animation-duration: 4s;
+} 
+
+
+
+
+
+
+/* ---------------------------------- */
+/* --------- Portfolio Page ---------- */
+/* ---------------------------------- */
+
+
+/* Haro Navbar */
+.portfolio li{
+    font-size: 3rem;
+    padding: 0 20px;
+}
+.list-port a {
+    font-size: 2rem;
+}
+
+/* Jobs Front */
+
+.Jobs-Front h2,
+.Jobs-Back h2 {
+    font-size: 2.3rem;
+    margin: 0;
+}
+.Jobs-Back br,
+.Jobs-Front br {
+    display: none;
+}
+.bodega p,
+.aceite p,
+.africa p {
+    font-size: 1.3rem;
+    padding: 0 5%;
+}   
+.bodega figure,
+.aceite figure,
+.africa figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bodega figure img,
+.aceite figure img,
+.africa figure img {
+    max-width: 60%;
+    max-height: 50%;
+    
+}

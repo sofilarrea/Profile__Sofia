@@ -1,0 +1,389 @@
+/* Hero  */ 
+.withe-line{
+    width: 19%;
+    left: 20%;
+    top: 43%;
+}
+.intro p {
+    font-size: 1.4rem;
+    top: 15%;
+}
+.container-hero h1{
+    top: 28%;
+}
+/* Navbar */
+nav {
+    background-color: rgba(0, 0, 0, 0.301);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.menu-icon{
+    display: none;
+}
+.navbar-links{
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: rgb(0 0 250);
+}
+.home .h:hover{
+    background-color: red;
+
+}
+.navbar-links li a:hover{
+    color:var(--color-primary);
+    background-color: var(--color-secundary);
+}
+
+/* Section One */
+.polaroid{
+    top: 24%;
+    right: 280%;
+}
+.section-one-text{
+    left: 43%;
+}
+
+.section-one-text h3{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.section-one-text p{
+    padding: 0 3px;
+    font-size: 1rem;
+}
+
+/* Media Querys */
+@media screen and (min-width: 1440px) {
+    .intro p {
+        font-size: 2rem;
+    }
+    .container-hero h1{
+        font-size: 5rem;
+    }
+    .quotation-mark {
+        width: 19%;
+    }
+    .card { 
+        height: 550px;        
+        width: 650px;
+    }
+    .polaroid {
+        top: 30%;
+        right: 330%;
+        width: 250px;
+    }
+    .polaroid p {
+        font-size: 1.4rem;
+    }
+    .section-one-text{
+        left: 45%;
+    }
+    .section-one-text h3{
+        font-size: 3rem;
+        display: flex;
+    }
+    .section-one-text p{
+        font-size: 1.3rem;    
+    }
+    .footer {
+        height: 60px;
+    }
+    .footer a,
+    .footer p {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 2560px){
+    .container-hero h1{
+        font-size: 8rem;
+    }
+    .intro p {
+        font-size:3.1rem;
+        top: 20%;
+    }
+    .withe-line{
+        height: 4px;
+    }
+    /* Navbar */
+    .home a {
+        font-size: 2.5rem;
+    }
+    .navbar-links li a {
+        font-size: 2.5rem;
+    }
+    /* Section One */
+    .card { 
+        width: 55%;
+        height: 70%;
+    }  
+    .polaroid {        
+        width:450px;
+    }
+    .polaroid p {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    
+    .section-one-text{
+        left: 45%;
+    }
+    .section-one-text h3{
+        font-size: 3rem;
+        white-space: nowrap;
+        margin-left: 140%;
+    }
+    .section-one-text p{
+            font-size: 1.9rem;
+            width: 250%;
+            margin: 0 auto;
+            line-height: 1.5;
+        
+    }
+    .footer {
+        height: 80px;
+    }
+    .footer a,
+    .footer p {
+        font-size: 3rem;
+    }
+}
+
+
+
+/* ---------------------------------- */
+/* --------- Contact Page ---------- */
+/* ---------------------------------- */
+
+.withe-line-contact{
+    width: 20%;
+    top: 45%;
+}
+.intro-contact p{
+    top: 25%
+}
+.section-contact-me {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-contact {
+    flex: 5; 
+    float: right;
+}
+
+.half-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    float: left;
+}
+
+
+
+.half-section figure:first-of-type img {
+    width: 350px;    
+    top: 19%;
+}
+
+.half-section figure:last-of-type img {
+    position: absolute;
+    right: 5%;
+    bottom: 17%;
+    left: auto;
+    opacity: 0.4;
+    width: 250px;
+    height: 350px;
+}
+
+@media screen and (min-width: 1440px) {
+    .half-section figure:first-of-type img{
+        position: relative;
+    }
+    .section-contact-me{
+        overflow: hidden;
+    }
+    .intro-contact p{
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 2560px){
+    .section-contact-me{
+        width: 80%;
+        flex-direction: row;
+    }
+    legend{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    label{
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+    .half-section figure:first-of-type img{
+        width: 800px;
+    }
+    .half-section figure:last-of-type img{
+        width: 400px;
+        height: 600px;
+        right: 23%;
+    }
+    .navbar-links li a{
+        gap: 40px;
+    }
+    .intro-contact p {
+        font-size: 2.9rem;
+    }
+   
+}
+
+
+
+
+/* ---------------------------------- */
+/* --------- Portfolio Page ---------- */
+/* ---------------------------------- */
+
+
+
+/* Header letters in the hero*/
+.portfolio ul li{
+    font-size: 3.1rem;    
+}
+
+.Jobs-Front hr,
+.Jobs-Back hr {
+    width: 35%;  
+}
+.Jobs-Front h2,
+.Jobs-Back h2 {
+    font-size: 2rem;
+} 
+
+.bodega figure img,
+.aceite figure img,
+.africa figure img {
+    max-width: 50%;
+    max-height: 50%;
+    
+}
+.bodega p,
+.aceite p,
+.africa p{
+    font-size: 1.3rem;
+}
+/* Media Querys */
+@media screen and (min-width: 1440px){
+    .portfolio li{
+        font-size: 7rem;
+    }
+    .Jobs-Front h2,
+    .Jobs-Back h2 {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Jobs-Back br,
+    .Jobs-Front br {
+        display: none;
+    }
+    .bodega p,
+    .aceite p,
+    .africa p {
+        font-size: 2rem;
+    }
+    .bodega figure img,
+    .aceite figure img,
+    .africa figure img {
+        max-width: 60%;
+        max-height: 70%;
+    }
+    .cincosentidos:link,
+    .dioliva:link,
+    .africa:link {
+    color: rgb(7, 7, 243);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+}
+@media screen and (min-width: 2560px) {
+    .portfolio ul li{
+        font-size: 10rem;
+    }
+    /* Navbar */
+    .home a {
+        font-size: 4rem;
+    }
+
+    .home a:hover{
+        background-color: var(--color-secundary);
+        color: var(--color-primary);
+        cursor:pointer
+    }
+    .navbar-links li a{
+        font-size: 3rem;
+    }
+    .Jobs-Front h2,
+    .Jobs-Back h2{
+        font-size: 5rem;
+    } 
+
+    .bodega figure img,
+    .aceite figure img,
+    .africa figure img {
+        width: 60%;
+    }
+    .bodega p,
+    .aceite p,
+    .africa p {
+        font-size: 3.3rem;
+    }
+    .cincosentidos:link,
+    .dioliva:link,
+    .africa:link {
+    color: rgb(7, 7, 243);
+    text-transform: uppercase;
+    font-size: 1.9rem;
+}
+}
+/* ---------------------------------- */
+/* --------- Portfolio Page ---------- */
+/* ---------------------------------- */
+.dentistry h2,
+.programmer h2 {
+    font-size: 2.2rem;
+}
+.dentistry p,
+.programmer p{
+    font-size: 1.4rem;
+}
+.gallerycontainer{
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 1440px){
+    .dentistry p,
+    .programmer p {
+    font-size: 1.9rem;
+    }
+
+}
+@media screen and (min-width: 2560px) {
+    .dentistry h2,
+    .programmer h2,
+    .gallerytitle {
+        font-size: 3.8rem;
+    } 
+    .dentistry p,
+    .programmer p {
+        font-size: 2.5rem;
+    }
+   
+}
