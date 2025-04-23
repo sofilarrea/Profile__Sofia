@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const textMarzano = 'FUNDACIÓN MARZANO';
+  const textMarzano = 'MARZANO';
   const typewriterMarzano = document.getElementById('typewriter-marzano');
   let charIndexMarzano = 0;
 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const textVizcaino = 'VIZCAÍNO ABOGADOS';
+  const textVizcaino = 'VIZCAÍNO';
   const typewriterVizcaino = document.getElementById('typewriter-vizcaino');
   let charIndexVizcaino = 0;
 
