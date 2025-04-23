@@ -30,3 +30,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(typeMarzano, 3000); // empieza después del primero
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const textReintegration = 'CACIQUES';
+  const typewriterReintegration = document.getElementById('typewriter-reintegration');
+  let charIndexReintegration = 0;
+
+  function typeReintegration() {
+    if (charIndexReintegration < textReintegration.length) {
+      typewriterReintegration.textContent += textReintegration.charAt(charIndexReintegration);
+      charIndexReintegration++;
+      setTimeout(typeReintegration, 150);
+    }
+  }
+
+  setTimeout(typeReintegration, 6000); // empieza después de los otros
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const textVizcaino = 'VIZCAÍNO ABOGADOS';
+  const typewriterVizcaino = document.getElementById('typewriter-vizcaino');
+  let charIndexVizcaino = 0;
+
+  function typeVizcaino() {
+    if (charIndexVizcaino < textVizcaino.length) {
+      typewriterVizcaino.textContent += textVizcaino.charAt(charIndexVizcaino);
+      charIndexVizcaino++;
+      setTimeout(typeVizcaino, 150);
+    }
+  }
+
+  setTimeout(typeVizcaino, 9000); // empieza después de los otros
+});
