@@ -1,4 +1,4 @@
-/* Hero  */ 
+/* Hero  */
 .withe-line{
     width: 19%;
     left: 20%;
@@ -64,12 +64,12 @@ nav {
     .quotation-mark {
         width: 19%;
     }
-    .card { 
-        height: 550px;        
+    .card {
+        height: 667px;
         width: 650px;
     }
     .polaroid {
-        top: 30%;
+        top: 26%;
         right: 330%;
         width: 250px;
     }
@@ -84,7 +84,7 @@ nav {
         display: flex;
     }
     .section-one-text p{
-        font-size: 1.3rem;    
+        font-size: 1.3rem;
     }
     .footer {
         height: 60px;
@@ -113,18 +113,18 @@ nav {
         font-size: 2.5rem;
     }
     /* Section One */
-    .card { 
+    .card {
         width: 55%;
         height: 70%;
-    }  
-    .polaroid {        
+    }
+    .polaroid {
         width:450px;
     }
     .polaroid p {
         font-size: 2rem;
         letter-spacing: 2px;
     }
-    
+
     .section-one-text{
         left: 45%;
     }
@@ -138,7 +138,7 @@ nav {
             width: 250%;
             margin: 0 auto;
             line-height: 1.5;
-        
+
     }
     .footer {
         height: 80px;
@@ -173,73 +173,72 @@ nav {
 }
 
 .form-contact {
-    flex: 5; 
+    flex: 5;
     float: right;
 }
 
 .half-section {
-    display: flex;
-    flex-direction: column;
-    flex: 1; 
-    float: left;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  float: left;
+  position: relative; /* Necesario para posicionar los hijos absolutamente */
 }
 
-
-
 .half-section figure:first-of-type img {
-    width: 350px;    
-    top: 19%;
+  width: 350px;
+  top: 19%;
 }
 
 .half-section figure:last-of-type img {
-    position: absolute;
-    right: 5%;
-    bottom: 17%;
-    left: auto;
-    opacity: 0.4;
-    width: 250px;
-    height: 350px;
+  position: absolute;
+  right: 5%;
+  top: 19%; /* Usamos solo top (coherencia) */
+  left: auto;
+  opacity: 0.4;
+  width: 250px;
+  height: 350px;
 }
 
 @media screen and (min-width: 1440px) {
-    .half-section figure:first-of-type img{
-        position: relative;
-    }
-    .section-contact-me{
-        overflow: hidden;
-    }
-    .intro-contact p{
-        font-size: 2rem;
-    }
+  .half-section figure:first-of-type img {
+      position: relative;
+  }
+  .section-contact-me {
+      overflow: hidden;
+  }
+  .intro-contact p {
+      font-size: 2rem;
+  }
 }
-@media screen and (min-width: 2560px){
-    .section-contact-me{
-        width: 80%;
-        flex-direction: row;
-    }
-    legend{
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
-    label{
-        font-size: 2.5rem;
-        padding: 10px;
-    }
-    .half-section figure:first-of-type img{
-        width: 800px;
-    }
-    .half-section figure:last-of-type img{
-        width: 400px;
-        height: 600px;
-        right: 23%;
-    }
-    .navbar-links li a{
-        gap: 40px;
-    }
-    .intro-contact p {
-        font-size: 2.9rem;
-    }
-   
+
+@media screen and (min-width: 2560px) {
+  .section-contact-me {
+      width: 100%;
+  }
+  legend {
+      font-size: 2rem;
+      margin-bottom: 10px;
+  }
+  label {
+      font-size: 2.5rem;
+      padding: 10px;
+  }
+  .half-section figure:first-of-type img {
+      width: 800px;
+  }
+  .half-section figure:last-of-type img {
+    width: 400px;
+    height: 600px;
+    right: 5%;
+    top: 29%;
+  }
+  .navbar-links li a {
+      gap: 40px;
+  }
+  .intro-contact p {
+      font-size: 2.9rem;
+  }
 }
 
 
@@ -253,24 +252,24 @@ nav {
 
 /* Header letters in the hero*/
 .portfolio ul li{
-    font-size: 3.1rem;    
+    font-size: 3.1rem;
 }
 
 .Jobs-Front hr,
 .Jobs-Back hr {
-    width: 35%;  
+    width: 35%;
 }
 .Jobs-Front h2,
 .Jobs-Back h2 {
     font-size: 2rem;
-} 
+}
 
 .bodega figure img,
 .aceite figure img,
 .africa figure img {
     max-width: 50%;
     max-height: 50%;
-    
+
 }
 .bodega p,
 .aceite p,
@@ -333,7 +332,7 @@ nav {
     .Jobs-Front h2,
     .Jobs-Back h2{
         font-size: 5rem;
-    } 
+    }
 
     .bodega figure img,
     .aceite figure img,
@@ -380,10 +379,10 @@ nav {
     .programmer h2,
     .gallerytitle {
         font-size: 3.8rem;
-    } 
+    }
     .dentistry p,
     .programmer p {
         font-size: 2.5rem;
     }
-   
+
 }

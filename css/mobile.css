@@ -1,6 +1,6 @@
 /* Hero Sectipageon */
 .hero{
-    background-image: url('../assests/images/jeremy-bishop-rqWoB4LFgmc-unsplash.jpg'); 
+    background-image: url('../assests/images/jeremy-bishop-rqWoB4LFgmc-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,18 +9,18 @@
     display: flex;
     background-attachment: fixed;
     padding: .1px;
-    width: 100%; 
+    width: 100%;
 
 }
 .container-hero h1 {
     font-size: 2.4rem;
-    display: flex;  
+    display: flex;
     position: absolute;
     top: 16%;
     left: auto;
     transform: rotate(-90deg);
     color: var(--color-secundary)
-    
+
 }
 .withe-line,
 .withe-line-contact {
@@ -30,7 +30,7 @@
     width: 30%;
     left: 16%;
     top: 26%;
-    transform: rotate(-90deg);    
+    transform: rotate(-90deg);
 }
 .intro p,
 .intro-contact p {
@@ -41,26 +41,26 @@
     left: 33%;
     top: 5%;
     bottom: 10%;
-    padding: 33px 8%; 
-} 
+    padding: 33px 8%;
+}
 
 
 /* Navbar Section */
-nav {  
+nav {
     display: flex;
     position: fixed;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between; 
-    z-index: 1; 
-      
+    justify-content: space-between;
+    z-index: 1;
+
 }
 
 .home {
-    display: flex;   
+    display: flex;
     align-items: center;
     padding: 0 20px;
-    height: 100%;    
+    height: 100%;
 }
 
 .home a {
@@ -69,7 +69,7 @@ nav {
 
 .menu-icon {
     display: flex;
-    justify-content: flex-end;    
+    justify-content: flex-end;
     gap: 10px;
     height: 100%;
     padding: 15px;
@@ -90,8 +90,8 @@ nav {
     font-weight: bold;
     text-transform: uppercase;
     opacity: 0.5;
-    letter-spacing: 1px;   
-} 
+    letter-spacing: 1px;
+}
 
 nav ul {
     list-style-type: none;
@@ -107,7 +107,7 @@ nav ul {
     padding: 20px;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.838);
-    justify-content: center;  
+    justify-content: center;
 }
 
 #navbar:target .open {
@@ -115,7 +115,7 @@ nav ul {
 }
 
 #navbar:target .close {
-    display: block;   
+    display: block;
 }
 
 .close {
@@ -123,7 +123,7 @@ nav ul {
 }
 /* Section One */
 .section-one{
-    height: 100dvh;    
+    height: 100dvh;
     background-image: url(../assests/images/mike-ko-tjod6u2RpiU-unsplash.jpg);
     background-size: cover;
     width: 100%;
@@ -132,29 +132,29 @@ nav ul {
 }
 .card {
     border: 2px white #fafafa10;
-    border-radius: 3%;    
+    border-radius: 3%;
     width: 20rem;
     height: 25rem;
-    margin: 0 auto;   
+    margin: 0 auto;
     position: absolute;
     top: 20%;
-    left: 11%; 
+    left: 11%;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .glass-effect{
     background-color: var(--glass-effect);
-    backdrop-filter: blur(0.4rem);   
+    backdrop-filter: blur(0.4rem);
 }
 
 .quotation-mark {
     width: 15%;
     position: absolute;
-    top: -20px; 
-    right: -5px; 
+    top: -20px;
+    right: -5px;
     text-shadow: 2px 5px #000;
     z-index: 1;
-    
-    
+
+
 }
 
 /* Polaroid */
@@ -162,12 +162,12 @@ nav ul {
     position: relative;
     width: 150px;
     padding: 15px;
-    background-color:var(--color-smoke);  
+    background-color:var(--color-smoke);
     top: 35%;
     left: 10px;
     border-radius: 10px;
     filter: grayscale(60%);
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
 
 .polaroid img {
@@ -176,12 +176,12 @@ nav ul {
   }
 .polaroid p{
     font-family: var(--font-family-five);
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
     color: var(--color-secundary);
     text-align: center;
     top: 15%;
     letter-spacing: 2;
-} 
+}
 .section-one-text {
     position: absolute;
     width: 250px;
@@ -196,16 +196,16 @@ nav ul {
 }
 .section-one-text h3 {
     font-family: var(--font-family-three);
-    color: var(--color-secundary);   
+    color: var(--color-secundary);
     font-size: 15px;
 }
 .section-one-text p{
     font-family: var(--font-family-two);
     font-size: 14px;
-    color: var(--color-secundary);   
-    justify-content: center;   
-    padding: 10px 20%;     
-} 
+    color: var(--color-secundary);
+    justify-content: center;
+    padding: 10px 20%;
+}
 
 /* Footer */
 .footer {
@@ -214,18 +214,19 @@ nav ul {
     align-items: center;
     padding: 10px 10px;
     height: 60px;
-    background-image: url('../assests/images/lines.jpg');
+    /* background-image: url('../assests/images/circulo.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     position: relative;
+    background-color: #000;
 }
 
 .footer-link a,
 .footer p {
-    
+
     opacity: 0.75;
     text-decoration: none;
-    font-size: 15px;    
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 10px;
     color: rgb(255, 250, 250);
@@ -263,7 +264,7 @@ nav ul {
     .withe-line{
         display: none;
     }
-    .quotation-mark{  
+    .quotation-mark{
         left: 4%;
         width: 15%;
         right: -13px;
@@ -271,7 +272,7 @@ nav ul {
     }
     .withe-line{
         display: none;
-    }    
+    }
     .card glass-effect {
         width: 280px;
     }
@@ -294,13 +295,13 @@ nav ul {
     height: 100dvh;
     position: relative;
     display: flex;
-    background-attachment: fixed;    
+    background-attachment: fixed;
     width: 100%;
     overflow: hidden;
-} 
+}
 
 .container-hero h1{
-    font-size: 2rem;    
+    font-size: 2rem;
     position: absolute;
     color: var(--color-secundary);
     transform: rotate(-90deg);
@@ -322,10 +323,11 @@ nav ul {
     background-color: var(--color-primary);
     width: 100%;
     height: 100vh;
-    flex-direction: column;   
+    flex-direction: column;
     position: relative;
     display: flex;
     align-items: center;
+    padding: 4rem 0;
 }
 .section-contact-me h2 {
     display: none;
@@ -354,9 +356,9 @@ nav ul {
 
 /* Image */
 .half-section-two figure:last-of-type img {
-    width: 100%; 
-    height: auto; 
-    opacity: 0.4; 
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
 }
 fieldset {
     border: none;
@@ -402,7 +404,7 @@ textarea {
 textarea {
     height: 70px;
     resize: none;
-    
+
 }
 
 input[type="submit"] {
@@ -415,24 +417,25 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: green;
+    background-color: rgb(20, 21, 20);
     color: var(--color-primary);
     border: 2px solid var(--color-primary);
     text-transform: uppercase;
+    color: white;
 
 }
 input[type="submit"]:visited {
     background-color: #8e3e72;
-} 
+}
 /* Leer el input */
 .form input,
 .form textarea {
-    color: var(--color-secundary); 
+    color: var(--color-secundary);
 }
 .form input[type="email"]:invalid {
     color: red;
     border: none;
-} 
+}
 
 
 
@@ -440,7 +443,7 @@ input[type="submit"]:visited {
 /* -------- Life Sketch Page -------- */
 /* ---------------------------------- */
 .hero-life{
-    background-image: url('/assests/images/circulo.jpg'); 
+    background-image: url('/assests/images/hero\ image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -449,14 +452,14 @@ input[type="submit"]:visited {
     display: flex;
     background-attachment: fixed;
     padding: .1px;
-    width: 100%; 
+    width: 100%;
 
 }
 
 /* Dentistry Section */
 .dentistry,
 .programmer{
-    background-image: url('/assests/images/bblack.jpg');
+    background-image: url('/assests/images/circulo.jpg');
     height: 450px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -471,13 +474,13 @@ input[type="submit"]:visited {
     width: 100%;
     height: 450px;
     border-radius: 10px;
-    
+
 }
 
 .dentistry h2,
 .programmer h2,
-.gallerytitle{  
-    font-size: 1.9rem;    
+.gallerytitle{
+    font-size: 1.9rem;
     font-family: var(--font-family-three);
     color: var(--color-secundary);
     letter-spacing: 32px;
@@ -537,17 +540,17 @@ input[type="submit"]:visited {
 /* Header Section */
 .hero-portfolio{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.542) 50%, rgba(10, 2, 9, 0.241)), url('/assests/images/porfolio3.jpg');
-    background-size: cover;    
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;    
+    height: 100vh;
     width: 100%;
     position: relative;
-    display: flex;    
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: center;
     bottom: -10px;
-} 
+}
 .portfolio{
     display: flex;
     flex-direction:column;
@@ -559,19 +562,19 @@ input[type="submit"]:visited {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
 }
 .portfolio li{
     font-size: 3rem;
     color: var(--color-secundary);
     opacity: 0.7;
-    text-align: center;    
+    text-align: center;
     transition: transform 0.3s;
 }
 .portfolio li.rotate {
     transform: rotate(90deg);
     margin-bottom: 0;
-    margin-top: 0;    
+    margin-top: 0;
 }
 .portfolio li.rotate.animate__slideInLeft {
     animation: slideInLeft 1s;
@@ -589,8 +592,8 @@ input[type="submit"]:visited {
     transform: translateX(-50%);
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between; 
-    z-index: 1;   
+    justify-content: space-between;
+    z-index: 1;
 }
 
 
@@ -605,7 +608,7 @@ input[type="submit"]:visited {
     width: 100%;
     position: relative;
     padding: 50px 0;
-    color: var(--color-tertiary); 
+    color: var(--color-tertiary);
     /* background-color: #080707; */
 }
 .Jobs-Front hr,
@@ -621,7 +624,7 @@ input[type="submit"]:visited {
     font-size: 1.3rem;
     font-family: var(--font-family-one);
     color: var(--color-tertiary);
-    text-align: center;   
+    text-align: center;
     letter-spacing: 15px;
     padding: 10px 0;
     margin-bottom: 20px;
@@ -637,7 +640,7 @@ input[type="submit"]:visited {
     text-align: center;
     /* margin-bottom: 20px;     */
     font-weight: 900;
-}   
+}
 
 .cincosentidos:link,
 .dioliva:link,
@@ -659,7 +662,7 @@ input[type="submit"]:visited {
 .bodega img,
 .aceite img,
 .africa img {
-    width: 100%;    
+    width: 100%;
     object-fit: cover;
     height: 100%;
     border-radius: 10px;
@@ -676,17 +679,133 @@ input[type="submit"]:visited {
 
 
 /* Media Querys */
-@media screen and (min-width: 320px) {    
+@media screen and (min-width: 320px) {
     .bodega p,
     .aceite p,
     .africa p{
         padding: 0 10px;
     }
 }
-@media screen and (min-width: 375px) {    
+@media screen and (min-width: 375px) {
     .bodega p,
     .aceite p,
     .africa p{
         padding: 0 10px;
     }
+}
+
+.background-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+}
+#three-container {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+.content p{
+  padding: 0 5rem;
+}
+
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  width: 80%;
+}
+/*time line portfolio*/
+body {
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  width: 4px;
+  height: 100%;
+  background: #444;
+}
+
+.timeline-progress {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  background: #fff;
+  z-index: 1;
+  transition: height 0.3s ease-out;
+}
+
+.timeline-container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 0;
+}
+
+.timeline-item {
+  position: relative;
+  width: 45%;
+  padding: 20px;
+  margin-bottom: 100px;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.6s ease;
+}
+
+.timeline-item.left {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline-item.right {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.timeline-item.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item h3 {
+  color: #0ff;
+  margin-bottom: 10px;
+}
+
+.timeline-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    float: none !important;
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+  }
 }
