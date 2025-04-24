@@ -385,6 +385,7 @@ label {
 input,
 select,
 textarea {
+    color: #fff;
     width: 70%;
     padding: 8px;
     margin-bottom: 5px;
