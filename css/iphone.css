@@ -5,3 +5,152 @@
     height: 100vh;
   }
 }
+
+.hero-portfolio {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.542) 50%, rgba(10, 2, 9, 0.241)), url('/assests/images/porfolio3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-portfolio::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* overlay oscuro */
+  z-index: 0;
+}
+
+.portfolio {
+  position: relative;
+  z-index: 1; /* arriba del overlay */
+}
+
+.portfolio ul {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.portfolio li{
+    font-size: 3rem;
+    color: var(--color-secundary);
+    opacity: 0.7;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.portfolio li.rotate {
+    transform: rotate(90deg);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.portfolio li.rotate.animate__slideInLeft {
+    animation: slideInLeft 1s;
+
+}
+.portfolio li.itemo{
+    margin: 25px 0;
+}
+/* Nav */
+.portfolio-nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.background-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+}
+#three-container {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+.content p{
+  padding: 0 5rem;
+}
+
+/* Portfolio projects part */
+.project-section {
+  background: #000;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+}
+
+.typewriter {
+  display: inline-block;
+  font-size: 2.5rem;
+  border-right: 2px solid #0ff;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 0.7s step-end infinite;
+  color: #ccc; /* gris claro */
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: rgb(7, 16, 16); }
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+a {
+  color: rgb(250, 253, 253);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+#navbar {
+  position: fixed; /* o relative si no querés que quede siempre visible */
+  top: 0;
+  width: 100%;
+  z-index: 10; /* más alto que el canvas */
+}
+
+#three-container {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* por debajo de la navbar */
+}
