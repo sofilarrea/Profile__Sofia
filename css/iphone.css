@@ -154,3 +154,13 @@ a {
   height: 100%;
   z-index: 0; /* por debajo de la navbar */
 }
+@supports (-webkit-touch-callout: none) {
+  @media only screen and (max-device-width: 600px) {
+    .hero-portfolio {
+      background-size: contain; /* Evita que se agrande */
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-color: black; /* O cualquier color que combine para los bordes */
+    }
+  }
+}
