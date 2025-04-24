@@ -295,7 +295,311 @@ z-index: 0; /* por debajo de la navbar */
 @supports (-webkit-touch-callout: none) {
   @media only screen and (max-device-width: 600px) {
     .hero-portfolio {
-      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.542) 50%, rgba(10, 2, 9, 0.241)), url('/assets/images/porfolio3.jpg');
+
+/* Navbar Section */
+nav {
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 1;
+
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 100%;
+}
+
+.home a {
+  padding: 20px 0;
+}
+
+.menu-icon {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  height: 100%;
+  padding: 15px;
+}
+
+.navbar-links {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home a,
+.navbar-links li a {
+  text-decoration: none;
+  color: var(--color-secundary);
+  font-family: var(--font-family-one);
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+/* Open and close menu */
+
+#navbar:target .navbar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;  /*Me ocupa la pantalla */
+  padding: 20px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.838);
+  justify-content: center;
+}
+
+#navbar:target .open {
+  display: none;
+}
+
+#navbar:target .close {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  height: 60px;
+  /* background-image: url('../assests/images/circulo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  position: relative;
+  background-color: #000;
+}
+
+.footer-link a,
+.footer p {
+
+  opacity: 0.75;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 10px;
+  color: rgb(255, 250, 250);
+}
+
+.footer p {
+  padding-right: 50px;
+}
+
+
+/* Media Querys */
+@media screen and (min-width: 375px) {
+  .withe-line{
+      left: 18%;
+  }
+  .intro p{
+      font-size: 1rem;
+  }
+  .card glass-effect{
+      left: 8%;
+  }
+  .section-one-text p {
+      padding: 10px 24%;
+      align-self: flex-end;
+  }
+  .footer{
+      height: 30px;
+  }
+  .container-hero h1{
+      left: auto;
+
+  }
+}
+@media screen and (max-width: 320px) {
+  .withe-line{
+      display: none;
+  }
+
+  }
+  .hero{
+      width: 100%;
+  }
+
+
+/* ---------------------------------- */
+/* --------- Porfolio Page ---------- */
+/* ---------------------------------- */
+
+/* Header Section */
+/* .hero-portfolio{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.542) 50%, rgba(10, 2, 9, 0.241)), url('/assests/images/porfolio3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -10px;
+} */
+.hero-portfolio {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.542) 50%, rgba(10, 2, 9, 0.241)), url('/assests/images/porfolio3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.portfolio ul {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.portfolio li{
+  font-size: 3rem;
+  color: var(--color-secundary);
+  opacity: 0.7;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.portfolio li.rotate {
+  transform: rotate(90deg);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.portfolio li.rotate.animate__slideInLeft {
+  animation: slideInLeft 1s;
+
+}
+.portfolio li.itemo{
+  margin: 25px 0;
+}
+/* Nav */
+.portfolio-nav{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.background-section {
+position: relative;
+height: 100vh;
+overflow: hidden;
+background: black;
+}
+#three-container {
+position: absolute;
+top: 0; left: 0;
+width: 100%;
+height: 100%;
+z-index: 0;
+}
+.content {
+position: relative;
+z-index: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+color: white;
+font-size: 2rem;
+text-align: center;
+}
+.content p{
+padding: 0 5rem;
+}
+
+/* Portfolio projects part */
+.project-section {
+background: #000;
+color: #fff;
+padding: 100px 20px;
+text-align: center;
+font-family: 'Courier New', monospace;
+}
+
+.typewriter {
+display: inline-block;
+font-size: 2.5rem;
+border-right: 2px solid #0ff;
+white-space: nowrap;
+overflow: hidden;
+animation: blink 0.7s step-end infinite;
+color: #ccc; /* gris claro */
+}
+
+@keyframes blink {
+from, to { border-color: transparent; }
+50% { border-color: rgb(7, 16, 16); }
+}
+
+p {
+font-size: 1.2rem;
+max-width: 600px;
+margin: 20px auto;
+}
+
+a {
+color: rgb(250, 253, 253);
+text-decoration: none;
+font-weight: bold;
+}
+
+
+#navbar {
+position: fixed; /* o relative si no querés que quede siempre visible */
+top: 0;
+width: 100%;
+z-index: 10; /* más alto que el canvas */
+}
+
+#three-container {
+position: absolute;
+top: 0; left: 0;
+width: 100%;
+height: 100%;
+z-index: 0; /* por debajo de la navbar */
+}
+/* AJUSTE SOLO PARA IPHONE SAFARI */
+@supports (-webkit-touch-callout: none) {
+  @media only screen and (max-device-width: 600px) {
+    .hero-portfolio {
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.542) 50%, rgba(10, 2, 9, 0.241)), url('/assests/images/porfolio3.jpg');
+      background-size: 100% auto !important; /* Fuerza ancho completo, alto proporcional */
+      background-repeat: no-repeat !important;
+      background-position: center top !important;
+      background-color: black !important; /* Por si hay bordes */
+    }
+  }
+}
       background-size: 100% auto !important; /* Fuerza ancho completo, alto proporcional */
       background-repeat: no-repeat !important;
       background-position: center top !important;
