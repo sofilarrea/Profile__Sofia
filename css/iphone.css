@@ -291,14 +291,15 @@ width: 100%;
 height: 100%;
 z-index: 0; /* por debajo de la navbar */
 }
-/* SAFARI ON IPHONE SPECIFIC */
+/* AJUSTE SOLO PARA IPHONE SAFARI */
 @supports (-webkit-touch-callout: none) {
   @media only screen and (max-device-width: 600px) {
     .hero-portfolio {
-      background-size: 100% auto; /* Ajusta ancho completo, alto proporcional */
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-color: black; /* Por si deja bordes */
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.542) 50%, rgba(10, 2, 9, 0.241)), url('/assets/images/porfolio3.jpg');
+      background-size: 100% auto !important; /* Fuerza ancho completo, alto proporcional */
+      background-repeat: no-repeat !important;
+      background-position: center top !important;
+      background-color: black !important; /* Por si hay bordes */
     }
   }
 }
