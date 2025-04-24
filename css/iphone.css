@@ -157,10 +157,9 @@ a {
 @supports (-webkit-touch-callout: none) {
   @media only screen and (max-device-width: 600px) {
     .hero-portfolio {
-      background-size: contain; /* Evita que se agrande */
+      background-size: 100% auto; /* Ancho completo, alto proporcional */
       background-repeat: no-repeat;
       background-position: center top;
-      background-color: black; /* O cualquier color que combine para los bordes */
     }
   }
 }
