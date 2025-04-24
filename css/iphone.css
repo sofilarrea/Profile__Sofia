@@ -1,0 +1,7 @@
+@media only screen and (max-width: 600px) {
+  .hero-portfolio {
+    background-position: center top;
+    background-size: cover;
+    height: 100vh;
+  }
+}

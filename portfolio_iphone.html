@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Frontend Developer.">
+        <meta name="keywords" content="Sofia Larrea, Sofia, fullstack, frontend, AEM , Bootstrap, HTML, CSS, Javascript, Wordpress, Figma">
+        <title>Porfolio</title>
+        <link rel="icon" href="/assests/images/sofia.png" type="image/png">
+
+        <link rel="stylesheet" href="css/iphone.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <script>
+          const ua = navigator.userAgent.toLowerCase();
+
+          if (/iphone|ipad|ipod/.test(ua) && /safari/.test(ua) && !/chrome/.test(ua)) {
+            // Es iPhone con Safari (NO Chrome)
+            window.location.href = "portfolio-iphone.html"; // Redirige a la página específica para iPhone
+          } else if (/android/.test(ua)) {
+            // Es Android
+            window.location.href = "portfolio-android.html"; // Redirige a la página específica para Android
+          }
+        </script>
+
+    </head>
+    </head>
+    <body>
+        <header class="hero-portfolio">
+            <div class="portfolio">
+                <ul>
+                    <li class="item rotate">P</li>
+                    <li class="itemo">O</li>
+                    <li class="item rotate">RTF</li>
+                    <li class="itemo">O</li>
+                    <li class="item rotate">LI</li>
+                    <li class="itemo">O</li>
+                </ul>
+            </div>
+                <nav id="navbar" class="portfolio-nav">
+                    <div class="home">
+                        <a href="index.html" class="h">Home</a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#navbar" class="open"><i class="fa-solid fa-bars" style="color: rgba(243, 233, 233, 0.659)"></i></a>
+                        <a href="#" class="close"><i class="fa-solid fa-xmark" style="color: rgba(243, 233, 233, 0.659)"></i></a>
+                    </div>
+                    <ul class="navbar-links">
+                      <!-- <li><a href="lifesketch.html">Life Sketch</a></li> -->
+                        <li><a href="contact.html">Contact me</a></li><li>
+                    </ul>
+                </nav>
+        </header>
+       <main>
+        <section class="project-section">
+          <h2 id="typewriter" class="typewriter"></h2>
+          <p>After learning to program, I had the opportunity to do an internship at <strong>Crowdfrica</strong>, where I developed my backend skills working on real-world projects for a non-profit organization in Ghana.</p>
+          <a href="https://crowdfrica.org" target="_blank">Visit Crowdfrica.org 🌍</a>
+        </section>
+        <section class="project-section">
+          <h2 id="typewriter-marzano" class="typewriter"></h2>
+          <p>I designed and executed the website for <strong>Fundación Marzano</strong>, focusing on user-centered design using Figma and front-end development for a clean and accessible experience.</p>
+          <a href="https://fundacionmarzano.org.ar/" target="_blank">Visit Fundación Marzano 💙</a>
+        </section>
+        <section class="project-section">
+          <h2 id="typewriter-reintegration" class="typewriter"></h2>
+          <p>I developed a webpage for a foundation that focuses on helping individuals who are incarcerated. The foundation provides literacy programs, teaches them to play rugby, and offers job opportunities once they are released. This project was especially meaningful as it combines education, sports, and work integration to help people reintegrate into society in a positive and constructive way.</p>
+          <a href=https://www.caciques.org.ar target="_blank">Visit the Project 💡</a>
+        </section>
+        <section class="project-section">
+          <h2 id="typewriter-vizcaino" class="typewriter"></h2>
+          <p>I designed and developed the website for <strong>Vizcaíno Abogados</strong>, a law firm that specializes in providing legal services with a modern and approachable online presence. My goal was to reflect their professionalism while ensuring clarity and accessibility in the site's structure and design.</p>
+          <a href="https://vizcaino-abogados.com" target="_blank">Visit Vizcaíno Abogados ⚖️</a>
+        </section>
+
+       </main>
+
+        <footer class="footer">
+            <div class="footer-link">
+                <a href="https://github.com/sofilarrea"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sofia-alejandra-larrea/"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+        </footer>
+        <script src="portfolio.js"></script>
+    </body>
+
+</html>
