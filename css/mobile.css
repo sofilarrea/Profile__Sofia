@@ -538,7 +538,7 @@ input[type="submit"]:visited {
 /* ---------------------------------- */
 
 /* Header Section */
-.hero-portfolio{
+/* .hero-portfolio{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.542) 50%, rgba(10, 2, 9, 0.241)), url('/assests/images/porfolio3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -550,11 +550,35 @@ input[type="submit"]:visited {
     align-items: center;
     justify-content: center;
     bottom: -10px;
+} */
+.hero-portfolio {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.542) 50%, rgba(10, 2, 9, 0.241)), url('/assests/images/porfolio3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-.portfolio{
-    display: flex;
-    flex-direction:column;
+
+.hero-portfolio::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* overlay oscuro */
+  z-index: 0;
 }
+
+.portfolio {
+  position: relative;
+  z-index: 1; /* arriba del overlay */
+}
+
 .portfolio ul {
     position: relative;
     list-style: none;
@@ -598,85 +622,6 @@ input[type="submit"]:visited {
 
 
 /* Jobs Front portfolio */
-.Jobs-Front,
-.Oil,
-.Jobs-Back {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.773), rgba(0, 0, 0, 0.4)), url('/assests/images/tela.jpg');
-    background-position: no-repeat;
-    background-size: cover;
-    height: 100dvh;
-    width: 100%;
-    position: relative;
-    padding: 50px 0;
-    color: var(--color-tertiary);
-    /* background-color: #080707; */
-}
-.Jobs-Front hr,
-.Jobs-Back hr {
-    width: 60%;
-    height: 0.5px;
-    background-color: var(--color-tertiary);
-    padding: 25px auto;
-}
-.Jobs-Front h2,
-.Oil h2,
-.Jobs-Back h2 {
-    font-size: 1.3rem;
-    font-family: var(--font-family-one);
-    color: var(--color-tertiary);
-    text-align: center;
-    letter-spacing: 15px;
-    padding: 10px 0;
-    margin-bottom: 20px;
-}
-
-
-.bodega p,
-.aceite p,
-.africa p {
-    font-size: 1.1rem;
-    font-family: var(--font-family-two);
-    color: var(--color-tertiary);
-    text-align: center;
-    /* margin-bottom: 20px;     */
-    font-weight: 900;
-}
-
-.cincosentidos:link,
-.dioliva:link,
-.africa:link {
-    color: rgb(7, 7, 243);
-    text-transform: uppercase;
-    font-size: 0.9rem;
-}
-.cincosentidos:visited,
-.dioliva:visited,
-.africa:visited {
-    color: rgb(247, 14, 14);
-}
-.cincosentidos:hover,
-.dioliva:hover,
-.africa:hover{
-    color: rgb(49, 237, 109);
-}
-.bodega img,
-.aceite img,
-.africa img {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    border-radius: 10px;
-}
-.Jobs-Front p:last-child,
-.Oil p:last-child,
-.Jobs-Back p:last-child {
-    margin-bottom: 0;
-}
-
-.Oil h2{
-    display: none;
-}
-
 
 /* Media Querys */
 @media screen and (min-width: 320px) {
@@ -762,4 +707,20 @@ a {
   color: rgb(250, 253, 253);
   text-decoration: none;
   font-weight: bold;
+}
+
+
+#navbar {
+  position: fixed; /* o relative si no querés que quede siempre visible */
+  top: 0;
+  width: 100%;
+  z-index: 10; /* más alto que el canvas */
+}
+
+#three-container {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* por debajo de la navbar */
 }

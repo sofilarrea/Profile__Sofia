@@ -25,11 +25,9 @@ nav {
     align-items: center;
     gap: 20px;
     box-shadow: rgb(0 0 250);
+    padding: 0 2rem;
 }
-.home .h:hover{
-    background-color: red;
 
-}
 .navbar-links li a:hover{
     color:var(--color-primary);
     background-color: var(--color-secundary);
