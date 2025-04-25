@@ -6,8 +6,7 @@
         <meta name="description" content="Frontend Developer.">
         <meta name="keywords" content="Sofia Larrea, Sofia, fullstack, frontend, AEM , Bootstrap, HTML, CSS, Javascript, Wordpress, Figma">
         <title>Porfolio</title>
-        <link rel="icon" href="/assests/images/sofia.png" type="image/png">
-
+        <link rel="icon" type="image/png" href="//sofiasarkany.com/cdn/shop/files/favicon-logo-sofia_94b7503f-fb12-4175-bc01-682b5cac734e.png?crop=center&amp;height=32&amp;v=1645636580&amp;width=32">        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -15,11 +14,10 @@
           const ua = navigator.userAgent.toLowerCase();
 
           if (/iphone|ipad|ipod/.test(ua) && /safari/.test(ua) && !/chrome/.test(ua)) {
-            // Es iPhone con Safari (NO Chrome)
-            window.location.href = "portfolio_iphone.html"; // Redirige a la página específica para iPhone
+            window.location.href = "portfolio_iphone.html";
           } else if (/android/.test(ua)) {
             // Es Android
-            window.location.href = "portfolio.html"; // Redirige a la página específica para Android
+            window.location.href = "portfolio.html";
           }
         </script>
     </head>
@@ -73,13 +71,15 @@
 
        </main>
 
-        <footer class="footer">
-            <div class="footer-link">
-                <a href="https://github.com/sofilarrea"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/sofia-alejandra-larrea/"><i class="fab fa-linkedin"></i></a>
-            </div>
-
-        </footer>
+       <footer class="footer">
+        <div class="footer-link">
+            <a href="https://github.com/sofilarrea"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sofia-alejandra-larrea/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="firma">
+            <p>by Sofía</p>
+        </div>
+    </footer>
         <script src="portfolio.js"></script>
     </body>
 

@@ -725,3 +725,9 @@ a {
   height: 100%;
   z-index: 0; /* por debajo de la navbar */
 }
+.firma p {
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
