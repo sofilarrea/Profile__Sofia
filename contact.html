@@ -44,26 +44,26 @@
                 <h2>Contact Information</h2>
                 <div class="full-section">
                   <div class="form-contact">
-                    <form action="/action_page.php" method="POST" class="formulario-elegante">
+               <form id="contactForm" class="formulario-elegante">
+  <fieldset>
+    <legend>Contact Form</legend>
 
-                      <fieldset>
-                        <legend>Contact Form</legend>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Bob Sponger" required>
 
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Bob" required>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="bobsponger@example.com" required>
 
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Sponger">
+    <label for="title">Subject</label>
+    <input type="text" id="title" name="title" placeholder="Your subject here" required>
 
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="bobsponger@example.com" required>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write your message here..." style="height:100px" required></textarea>
 
-                        <label for="message">Message</label>
-                        <textarea id="message" name="subject" placeholder="I would like to ask for" style="height:100px"></textarea>
+    <input type="submit" value="Submit" class="submit">
+  </fieldset>
+</form>
 
-                        <input type="submit" value="Submit" class="submit">
-                      </fieldset>
-                    </form>
                   </div>
 
                     <div class="half-section">
@@ -84,5 +84,29 @@
             </div>
 
         </footer>
+
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("trB1-frfrQNxBOI-F"); // Tu Public Key
+  })();
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const serviceID = 'service_vua3hkh'; // Tu Service ID
+    const templateID = 'template_fy99156'; // Tu Template ID
+
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        alert('✅ Message sent successfully!');
+        this.reset(); // Limpia el formulario
+      }, (err) => {
+        console.error('❌ Failed to send message:', err);
+        alert('Something went wrong. Please try again.');
+      });
+  });
+</script>
+
     </body>
 </html>
