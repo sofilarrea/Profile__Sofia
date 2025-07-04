@@ -33,33 +33,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const textReintegration = 'CACIQUES';
-  const typewriterReintegration = document.getElementById('typewriter-reintegration');
-  let charIndexReintegration = 0;
-
-  function typeReintegration() {
-    if (charIndexReintegration < textReintegration.length) {
-      typewriterReintegration.textContent += textReintegration.charAt(charIndexReintegration);
-      charIndexReintegration++;
-      setTimeout(typeReintegration, 150);
+  // Texto para cada sección
+  const animations = [
+    {
+      text: 'CACIQUES',
+      elementId: 'typewriter-reintegration',
+      delay: 6000
+    },
+    {
+      text: 'VIZCAÍNO',
+      elementId: 'typewriter-vizcaino',
+      delay: 0 // empieza de inmediato
+    },
+    {
+      text: 'CUERVO',
+      elementId: 'typewriter-cuervo',
+      delay: 9000
     }
-  }
+  ];
 
-  setTimeout(typeReintegration, 6000); // empieza después de los otros
-});
+  animations.forEach(({ text, elementId, delay }) => {
+    const element = document.getElementById(elementId);
+    let charIndex = 0;
 
-document.addEventListener('DOMContentLoaded', () => {
-  const textVizcaino = 'VIZCAÍNO';
-  const typewriterVizcaino = document.getElementById('typewriter-vizcaino');
-  let charIndexVizcaino = 0;
-
-  function typeVizcaino() {
-    if (charIndexVizcaino < textVizcaino.length) {
-      typewriterVizcaino.textContent += textVizcaino.charAt(charIndexVizcaino);
-      charIndexVizcaino++;
-      setTimeout(typeVizcaino, 150);
+    function typeWriter() {
+      if (charIndex < text.length) {
+        element.textContent += text.charAt(charIndex);
+        charIndex++;
+        setTimeout(typeWriter, 150);
+      }
     }
-  }
 
-  setTimeout(typeVizcaino, 9000); // empieza después de los otros
+    setTimeout(typeWriter, delay);
+  });
 });
