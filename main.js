@@ -47,3 +47,98 @@ function animate() {
   renderer.render(scene, camera);
 }
 animate();
+
+
+
+// Commons.js
+import { PerspectiveCamera, WebGLRenderer, Clock } from "three";
+import Lenis from "lenis";
+
+class Commons {
+  static instance;
+
+  constructor() {
+    if (Commons.instance) return Commons.instance;
+
+    this.lenis = null;
+    this.camera = null;
+    this.renderer = null;
+    this.time = new Clock();
+    this.elapsedTime = 0;
+    this.distanceFromCamera = 1000;
+
+    this.sizes = {
+      screen: {
+        width: window.innerWidth,
+        height: window.innerHeight,
+        aspect: window.innerWidth / window.innerHeight,
+      },
+      pixelRatio: this.getPixelRatio(),
+    };
+
+    Commons.instance = this;
+  }
+
+  static getInstance() {
+    if (!Commons.instance) {
+      Commons.instance = new Commons();
+    }
+    return Commons.instance;
+  }
+
+  init() {
+    this.createLenis();
+    this.createCamera();
+    this.createRenderer();
+  }
+
+  createLenis() {
+    this.lenis = new Lenis({ autoRaf: true, duration: 2 });
+  }
+
+  createCamera() {
+    this.camera = new PerspectiveCamera(
+      70,
+      this.sizes.screen.aspect,
+      200,
+      2000
+    );
+    this.camera.position.z = this.distanceFromCamera;
+    this.camera.updateProjectionMatrix();
+  }
+
+  createRenderer() {
+    this.renderer = new WebGLRenderer({ alpha: true });
+    this.renderer.setSize(this.sizes.screen.width, this.sizes.screen.height);
+    this.renderer.setPixelRatio(this.sizes.pixelRatio);
+    document.body.appendChild(this.renderer.domElement);
+  }
+
+  getPixelRatio() {
+    return Math.min(window.devicePixelRatio, 2);
+  }
+
+  onResize() {
+    this.sizes.screen = {
+      width: window.innerWidth,
+      height: window.innerHeight,
+      aspect: window.innerWidth / window.innerHeight,
+    };
+    this.sizes.pixelRatio = this.getPixelRatio();
+
+    this.renderer.setSize(this.sizes.screen.width, this.sizes.screen.height);
+    this.renderer.setPixelRatio(this.sizes.pixelRatio);
+    this.onResizeCamera();
+  }
+
+  onResizeCamera() {
+    this.camera.aspect = this.sizes.screen.aspect;
+    this.camera.updateProjectionMatrix();
+  }
+
+  update() {
+    this.elapsedTime = this.time.getElapsedTime();
+  }
+}
+
+export default Commons;

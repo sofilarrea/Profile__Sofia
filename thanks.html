@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Frontend Developer.">
+        <meta name="keywords" content="Sofia Larrea, Sofia, fullstack, frontend, AEM , Bootstrap, HTML, CSS, Javascript, Wordpress, Figma">
+        <title>Portfolio de Sofía Larrea | Frontend Developer</title>
+        <link rel="icon" type="image/png" href="//sofiasarkany.com/cdn/shop/files/favicon-logo-sofia_94b7503f-fb12-4175-bc01-682b5cac734e.png?crop=center&amp;height=32&amp;v=1645636580&amp;width=32">        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <script>
+          const ua = navigator.userAgent.toLowerCase();
+
+          if (/iphone|ipad|ipod/.test(ua) && /safari/.test(ua) && !/chrome/.test(ua)) {
+            window.location.href = "portfolio_iphone.html";
+          } else if (/android/.test(ua)) {
+            // Es Android
+            window.location.href = "portfolio.html";
+          }
+        </script>
+    </head>
+    <body>
+        <header class="hero-thanks">
+           <div class="content">
+  <div class="container">
+    <section class="section__heading">
+      <h3 data-animation="webgl-text" class="text__2">THREE.JS</h3>
+      <h2 data-animation="webgl-text" class="text__1">
+        RESPONSIVE AND ACCESSIBLE TEXT
+      </h2>
+    </section>
+    <section class="section__main__content">
+      <p data-animation="webgl-text" class="text__2">
+        THIS TEXT IS STYLED TO LOOK LIKE A TYPICAL BLOCK OF TEXT ON A STANDARD
+        WEBSITE. BUT UNDER THE SURFACE, IT'S BEING RENDERED WITH WEBGL INSTEAD
+        OF TRADITIONAL HTML.
+      </p>
+      <p data-animation="webgl-text" class="text__2">
+        THIS OPENS THE DOOR TO CUSTOM SHADER EFFECTS AND INTERACTIONS THAT GO
+        BEYOND WHAT'S POSSIBLE WITH TRADITIONAL HTML.
+      </p>
+      <p data-animation="webgl-text" class="text__2">
+        WE KEEP THE UNDERYLING HTML STRUCTURE PRESENT IN THE DOM. RATHER THAN
+        CREATING MESHES DIRECTLY IN THREE.JS, THE SCENE IS BUILT BY READING FROM
+        THE EXISTING HTML CONTENT. THIS WAY, SCREEN READERS, SEARCH ENGINES, AND
+        OTHER TOOLS CAN STILL INTERPRET THE PAGE AS EXPECTED.
+      </p>
+    </section>
+    <section class="section__footer">
+      <p data-animation="webgl-text" class="text__3">
+        NOW GO CRAZY WITH THE SHADERS :)
+      </p>
+    </section>
+  </div>
+</div>
+                <nav id="navbar" class="portfolio-nav">
+                    <div class="home">
+                        <a href="index.html" class="h">Home</a>
+                    </div>
+                    <div class="menu-icon">
+                        <a href="#navbar" class="open"><i class="fa-solid fa-bars" style="color: rgba(243, 233, 233, 0.659)"></i></a>
+                        <a href="#" class="close"><i class="fa-solid fa-xmark" style="color: rgba(243, 233, 233, 0.659)"></i></a>
+                    </div>
+                    <ul class="navbar-links">
+                      <!-- <li><a href="lifesketch.html">Life Sketch</a></li> -->
+                        <li><a href="contact.html">Contact me</a></li><li>
+                    </ul>
+                </nav>
+        </header>
+
+       </main>
+
+       <footer class="footer">
+        <div class="footer-link">
+            <a href="https://github.com/sofilarrea"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sofia-alejandra-larrea/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="firma">
+            <p>by Sofía</p>
+        </div>
+    </footer>
+        <script src="main.js"></script>
+    </body>
+
+</html>
