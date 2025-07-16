@@ -1,112 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Frontend Developer.">
-    <meta name="keywords" content="Sofia Larrea, Sofia, fullstack, frontend, AEM , Bootstrap, HTML, CSS, Javascript, Wordpress, Figma">
-    <title>Portfolio de Sofía Larrea | Frontend Developer</title>
-    <link rel="icon" href="/assests/images/sofia.jpg" type="image/png">
-    <link rel="icon" type="image/png" href="//sofiasarkany.com/cdn/shop/files/favicon-logo-sofia_94b7503f-fb12-4175-bc01-682b5cac734e.png?crop=center&amp;height=32&amp;v=1645636580&amp;width=32">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frontend Developer.">
+  <meta name="keywords" content="Sofia Larrea, Sofia, frontend, AEM, Bootstrap, HTML, CSS, Javascript, Wordpress, Figma">
+  <title>Portfolio de Sofía Larrea | Frontend Developer</title>
+  <link rel="icon" href="/assets/images/sofia.jpg" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-    <body>
-        <header class="hero-contact">
-            <div class="video-contact-section">
-                <video src="./assests/video/nubes.mp4" controls autoplay loop></video>
-            </div>
-            <div class="container-hero">
-                <h1>CONTACT <br>   ME .</h1>
-                <hr class="withe-line-contact">
-            </div>
-            <div class="intro-contact">
-                <p>For business inquiries or project collaborations, especially in the realms of crafting landing pages and websites, kindly fill out the form. <em> I look forward to connecting with you.</em></p>
-            </div>
-            <nav id="navbar">
-                <div class="home">
-                    <a href="index.html" class="h">Home</a>
-                </div>
-                <div class="menu-icon">
-                    <a href="#navbar" class="open"><i class="fa-solid fa-bars" style="color: rgba(243, 233, 233, 0.659)"></i></a>
-                    <a href="#" class="close"><i class="fa-solid fa-xmark" style="color: rgba(243, 233, 233, 0.659)"></i></a>
-                </div>
-                <ul class="navbar-links">
-                    <!-- <li><a href="lifesketch.html">Life Sketch</a></li> -->
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><!-- Esto parece un error de tipografía, debe ser "Portfolio" en lugar de "Porfolio" --></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="section-contact-me">
-                <h2>Contact Information</h2>
-                <div class="full-section">
-                  <div class="form-contact">
-               <form id="contactForm" class="formulario-elegante">
+<body>
+  <header class="hero-contact">
+    <div class="video-contact-section">
+      <video src="./assets/video/nubes.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <div class="container-hero">
+      <h1>CONTACT <br> ME.</h1>
+      <hr class="white-line-contact">
+    </div>
+    <div class="intro-contact">
+      <p>For business inquiries or project collaborations, especially in crafting landing pages and websites, fill out the form below. <em>I look forward to connecting with you.</em></p>
+    </div>
+    <nav id="navbar">
+      <div class="home">
+        <a href="index.html" class="h">Home</a>
+      </div>
+      <div class="menu-icon">
+        <a href="#navbar" class="open"><i class="fa-solid fa-bars" style="color: rgba(243, 233, 233, 0.659)"></i></a>
+        <a href="#" class="close"><i class="fa-solid fa-xmark" style="color: rgba(243, 233, 233, 0.659)"></i></a>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-contact-me">
+      <h2>Contact Information</h2>
+      <div class="full-section">
+        <div class="form-contact">
+        <form id="contactForm" class="formulario-elegante">
   <fieldset>
     <legend>Contact Form</legend>
 
     <label for="name">Full Name</label>
-    <input type="text" id="name" name="name" placeholder="Bob Sponger" required>
+    <input type="text" id="name" name="user_name" placeholder="Bob Sponger" required>
 
     <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="bobsponger@example.com" required>
+    <input type="email" id="email" name="user_email" placeholder="bob@example.com" required>
 
     <label for="title">Subject</label>
-    <input type="text" id="title" name="title" placeholder="Your subject here" required>
+    <input type="text" id="title" name="subject" placeholder="Your subject here" required>
 
     <label for="message">Message</label>
-    <textarea id="message" name="message" placeholder="Write your message here..." style="height:100px" required></textarea>
+    <textarea id="message" name="message" placeholder="Write your message here..." rows="4" required></textarea>
 
     <input type="submit" value="Submit" class="submit">
+    <p id="statusMessage"></p>
   </fieldset>
 </form>
 
-                  </div>
+        </div>
 
-                    <div class="half-section">
-                        <figure>
-                            <img src="./assests/images/Leonardo_Diffusion_XL_generate_a_black_background_with_litle_l_0.jpg" alt="texture-black" class="texture-black" loading="lazy">
-                        </figure>
-                        <figure>
-                            <img src="./assests/images/think%20outside%20the%20bok.jpg" alt="Think-outside-the-box" class="texture-photo" loading="lazy">
-                        </figure>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer-link">
-                <a href="https://github.com/sofilarrea"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/sofia-alejandra-larrea/"><i class="fab fa-linkedin"></i></a>
-            </div>
+        <div class="half-section">
+          <figure>
+            <img src="./assets/images/Leonardo_Diffusion_XL_generate_a_black_background_with_litle_l_0.jpg" alt="texture-black" class="texture-black" loading="lazy">
+          </figure>
+          <figure>
+            <img src="./assets/images/think-outside-the-box.jpg" alt="Think outside the box" class="texture-photo" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        </footer>
+  <footer class="footer">
+    <div class="footer-link">
+      <a href="https://github.com/sofilarrea" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sofia-alejandra-larrea/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
 
-        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <!-- EmailJS -->
+ <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
   (function(){
-    emailjs.init("trB1-frfrQNxBOI-F"); // Tu Public Key
+    emailjs.init("trB1-frfrQNxBOI-F"); // ✅ Tu Public Key
   })();
 
   document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+    event.preventDefault(); // Evita que recargue la página
 
-    const serviceID = 'service_vua3hkh'; // Tu Service ID
-    const templateID = 'template_fy99156'; // Tu Template ID
+    const serviceID = 'service_vua3hkh';   // ✅ Tu Service ID
+    const templateID = 'template_iwcfeob'; // ✅ Tu Template ID
 
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
-        alert('✅ Message sent successfully!');
-        this.reset(); // Limpia el formulario
+        const statusMsg = document.getElementById('statusMessage');
+        statusMsg.textContent = "✅ Message sent successfully!";
+        statusMsg.style.color = "green";
+        this.reset();
       }, (err) => {
-        console.error('❌ Failed to send message:', err);
-        alert('Something went wrong. Please try again.');
+        const statusMsg = document.getElementById('statusMessage');
+        statusMsg.textContent = "❌ Failed to send message. Try again.";
+        statusMsg.style.color = "red";
+        console.error('EmailJS error:', err);
       });
   });
 </script>
-
-    </body>
+</body>
 </html>
